@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+	<title>Palo Alto</title>
+	<link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</header>
+<body>
+<header class = "header">
+	<h1 class="header__title">Palo Alto</h1>
+</header>
+	<main class = "cv">
+		<div class = "cv__title">Profile</div>
+		<div class = "cv__divider"></div>
+		<section class="cv__section-profile">
+			<form>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name" for="first_name">First Name</label>
+					<input class = "cv__form__block-input" id ="first_name" name="first_name" placeholder="John" autofocus tabindex="1">
+				</div>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name" for="last_name">Last Name</label>
+					<input class = "cv__form__block-input" id ="last_name" name="last_name" placeholder="Doe" tabindex="2">
+				</div>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name" for="email_address">E-mail</label>
+					<input class = "cv__form__block-input" id ="email_address" name="email_adress" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="jhondoe@gmail.com" tabindex="3">
+				</div>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name" for="phone_number">Phone</label>
+					<input class = "cv__form__block-input" id="phone_number" name="phone_number" type="tel" pattern="\d\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+_(___)-__-__" tabindex="4">
+				</div>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name" for="birth_date">Date of birth</label>
+					<input class = "cv__form__block-input cv__form__date" id="birth_date" name="birth_date" placeholder="DD/MM/YYYY" tabindex="5">
+				</div>
+				<div class="cv__form__block">
+					<label class = "cv__form__block-name">Sex</label>
+					<div class = "cv__form__radio">
+						<input class = "cv__form__radio-button" type ="radio" id="male" checked name="sex" value="male">
+						<label class = "cv__form__radio-label" for="male">Male</label>
+					</div>
+					<div class = "cv__form__radio">
+						<input class = "cv__form__radio-button" type ="radio" id="female" name="sex" value="female">
+						<label class = "cv__form__radio-label" for="female">Female</label>
+					</div>
+				</div>
+				<div class="cv__form__block">
+					<input class = "cv__form__submit" type="submit" value="submit">
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer class = "footer">
+		<div class = "footer__title">Palo Alto</div>
+	</footer>
+</body>
+</html>
