@@ -1,0 +1,33 @@
+@import 'variables';
+
+body{
+ // width: 1400px;
+ // height: 1470px;
+  margin: auto;
+  background-color: $primary-color;
+}
+.header{
+  padding: 77px 0 80px 224px;
+}
+.header__title{
+  font-family: $font-LatoBold;
+  font-style: italic;
+  font-size: 42px;
+  font-weight: 800;
+  color: #333333;
+}
+
+.footer{
+  margin: 105px 0 0 0;
+  height: 160px;
+  width: 100%;
+  background-color: #5c6bc0;
+}
+.footer__title{
+  padding-top: 70px;
+  font-family: $font-LatoBold;
+  font-style: italic;
+  font-size: 36px;
+  color: #4a569a;
+  text-align: center;
+}

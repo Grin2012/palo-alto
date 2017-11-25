@@ -1,0 +1,131 @@
+@import 'variables';
+
+.main{
+  width: 952px;
+  height: auto;
+  margin: auto;
+  padding: 77px 98px;
+  background-color: $main-background-color;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px 0 $primary-shadow-color
+}
+.title{
+  margin-bottom: 33px;
+  font-family: $font-LatoBold;
+  font-size: 40px;
+  color: #333333;
+}
+.main__divider {
+  width: 100%;
+  height: 2px;
+  background: $divider-color;
+  margin-bottom: 45px;
+}
+.main__section-profile{
+  margin: auto;
+  width: 364px;
+  height: auto;
+}
+.form{
+  margin: 0;
+  padding: 0;
+}
+.form__textblock{
+  margin-bottom: 30px;
+}
+.form__textblock-name{
+  display: block;
+  margin-bottom: 13px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: $block-name-color;
+}
+.form__textblock-input {
+  width: 364px;
+  height: 56px;
+  background-color: $primary-color;
+  padding-left: 30px;
+  font-family: $font-Lato;
+  font-size: 20px;
+  color: $block-input-color;
+  border: 1px solid $primary-color;
+  outline: 0;
+  &:focus {
+    border-color: $focus-border-color;
+  }
+}
+.form__datepickericon{
+  background: $primary-color url(../images/calendar.png) no-repeat 350px;
+
+}
+
+.radio {
+  font-family: $font-Lato;
+  font-size: 20px;
+  color: $block-input-color;
+  margin-bottom: 10px;
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    margin-bottom: 3px;
+    + .radio-label {
+      &:before {
+        content: '';
+        background: $primary-color;
+        border-radius: 100%;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 0;
+        margin-right: 1em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 100ms ease;
+      }
+    }
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $focus-border-color;
+          box-shadow: inset 0 0 0 5px $primary-color;
+        }
+      }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $focus-border-color;
+        }
+      }
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.form__submit {
+  width: 190px;
+  height: 54px;
+  margin-left: -15px;
+  background: none;
+  color: $button-text-color;
+  font-family: $font-LatoBold;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: 1px solid $main-background-color;
+  outline: 0;
+  &:hover {
+    border-color: $hover-border-color;
+  }
+  &:active {
+    border-color: $active-border-color;
+  }
+}
