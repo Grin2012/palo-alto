@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "global": "^4.3.2",
-    "gulp-cli": "^1.4.0"
+    "gulp-cli": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "source-map": "^0.6.1"
   }
 }

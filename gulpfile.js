@@ -4,14 +4,14 @@ var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
 var cssmin = require('gulp-cssmin');
 var browserSync = require('browser-sync').create();
 
 var path = {
-    css: './src/**/*.scss',
-    fonts: './src/fonts/**',
     images: './src/images/**',
+    fonts: './src/fonts/**',
+    css: './src/*.scss',
     html: {
         pages: './src/pages/**/*.hbs',
         partials: './src/partials/'
@@ -20,11 +20,9 @@ var path = {
         fonts: './dist/fonts/',
         images: './dist/images/',
         css: './dist/',
-        html: './dist/',
+        html: './dist/'
     },
     watch: {
-        // fonts: './src/fonts/**',
-        // images: './src/images/**',
         css: './src/**/*.scss',
         html: './src/**/*.hbs'
     }
@@ -36,7 +34,12 @@ gulp.task('css', function () {
 
     return gulp.src(path.css)
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('main.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions']
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(cssmin())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dist.css));
 });
 
@@ -68,8 +71,6 @@ gulp.task('build', ['html', 'css', 'fonts', 'images']);
 gulp.task('watch', function () {
     gulp.watch(path.watch.html, ['html']);
     gulp.watch(path.watch.css, ['css']);
-    // gulp.watch(path.fonts, ['fonts']);
-    // gulp.watch(path.images, ['images']);
 });
 
 gulp.task('serve', ['watch'], function() {

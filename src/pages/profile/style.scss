@@ -129,3 +129,59 @@
     border-color: $active-border-color;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .profile{
+    width: 87%;
+    padding: 60px 84px;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile {
+    width: 87%;
+    padding: 40px 60px;
+  }
+  .title{
+    margin-bottom: 33px;
+    font-size: 32px;
+  }
+  .profile__divider {
+    margin-bottom: 30px;
+  }
+  .profile__section{
+    width: 87%;
+  }
+   .form__textblock{
+    margin-bottom: 20px;
+  }
+  .form__textblock-name{
+    font-size: 16px;
+  }
+  .form__textblock-input {
+    width: 87%;
+    height: 42px;
+    padding-left: 24px;
+    font-size: 16px;
+  }
+  .form__datepickericon{
+    background: $primary-color url(../../images/calendar.png) no-repeat 90%;
+  }
+  .radio {
+    font-size: 16px;
+  }
+ }
+
+@media screen and (max-width: 480px) {
+  .profile {
+    width: 87%;
+    padding: 30px 40px;
+  }
+  .form__datepickericon{
+    background: $primary-color url(../../images/calendar.png) no-repeat 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
