@@ -24,7 +24,7 @@
 }
 
 .article_content{
-  box-sizing: border-box;
+  margin: 0;
   padding: 0 95px;
  }
 
@@ -85,26 +85,6 @@
   padding: 55px 0 80px;
 }
 
-.button__read-more {
-  display: inline-block;
-  padding: 20px 35px 20px 35px;
-  color: $focus-border-color;
-  font-family: $font-LatoBold;
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: solid 1px rgba(0, 0, 0, 0);
-  background: none;
-  transition: all 0.3s;
-}
-.button__read-more:hover {
-  border: solid 1px $hover-border-color;
-}
-.button__read-more:active {
-  border: solid 1px $active-border-color;
-}
-
 .hash-tags {
   display: inline-block;
   margin-top: 22px;
@@ -140,7 +120,6 @@
 @media screen and (max-width: 768px) {
   .articles{
     width: 87%;
-    height: 87%;
    }
    .article_content{
    padding: 0 50px;
@@ -172,31 +151,15 @@
   .article__footer {
     padding: 0 0 80px;
   }
-  .button__read-more {
-    display: block;
-  }
-  .hash-tags {
-    display: block;
-    padding-left: 0;
-    margin: 24px 0 0;
-    float: left;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .articles{
-    width: 87%;
-  }
   .article_content{
     padding: 0 31px;
-  }
-  .article__date {
-    font-size: 12px;
   }
   .article__heading {
     font-size: 24px;
     line-height: 32px;
-    margin-top: 20px;
   }
   .paragraph {
     margin-top: 26px;
@@ -207,15 +170,18 @@
   }
   .article__text_quote {
     font-size: 18px;
-    line-height: 30px;
   }
   .article__pagemark {
     top: 0;
     right: -32px;
   }
+  .hash-tags {
+    display: block;
+    padding-left: 0;
+    margin: 24px 0 0;
+    float: left;
+  }
 }
-
-
 
 @media screen and (max-width: 320px) {
 

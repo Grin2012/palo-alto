@@ -55,7 +55,7 @@
   }
 }
 .form__datepickericon{
-  background: $primary-color url(../../images/calendar.png) no-repeat 350px;
+  background: $primary-color url(images/calendar.png) no-repeat 350px;
 
 }
 
@@ -111,39 +111,17 @@
   }
 }
 
-.form__submit {
-  width: 190px;
-  height: 54px;
-  margin-left: -15px;
-  background: none;
-  color: $button-text-color;
-  font-family: $font-LatoBold;
-  text-transform: uppercase;
-  font-size: 24px;
-  border: 1px solid $main-background-color;
-  outline: 0;
-  &:hover {
-    border-color: $hover-border-color;
-  }
-  &:active {
-    border-color: $active-border-color;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .profile{
     width: 87%;
     padding: 60px 84px;
-
   }
 }
 @media screen and (max-width: 768px) {
   .profile {
-    width: 87%;
     padding: 40px 60px;
   }
   .title{
-    margin-bottom: 33px;
     font-size: 32px;
   }
   .profile__divider {
@@ -165,7 +143,7 @@
     font-size: 16px;
   }
   .form__datepickericon{
-    background: $primary-color url(../../images/calendar.png) no-repeat 90%;
+    background: $primary-color url(images/calendar.png) no-repeat 90%;
   }
   .radio {
     font-size: 16px;
@@ -174,11 +152,10 @@
 
 @media screen and (max-width: 480px) {
   .profile {
-    width: 87%;
     padding: 30px 40px;
   }
   .form__datepickericon{
-    background: $primary-color url(../../images/calendar.png) no-repeat 90%;
+    background: $primary-color url(images/calendar.png) no-repeat 90%;
   }
 }
 

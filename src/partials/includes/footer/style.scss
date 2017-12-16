@@ -96,10 +96,8 @@
 @media screen and (max-width: 768px) {
   .footer {
     margin: 80px 0 0 0;
-    padding-bottom: 70px;
     &__title {
       padding-top: 50px;
-      font-size: 36px;
     }
     &__logo {
       padding-top: 50px;
@@ -117,7 +115,6 @@
     }
     &__copyrights {
       margin-top: 40px;
-      margin-bottom: 37px;
        & a{
        }
     }
@@ -127,16 +124,7 @@
 @media screen and (max-width: 480px) {
   .footer {
     margin: 54px 0 0 0;
-    padding-bottom: 70px;
-    &__title {
-      padding-top: 50px;
-      font-size: 36px;
-    }
-    &__logo {
-      padding-top: 50px;
-    }
     &-nav {
-      margin: 50px 0 40px 0;
       word-spacing: 40px;
       display: block;
       &__link {
@@ -148,8 +136,6 @@
       }
     }
     &__copyrights {
-      margin-top: 40px;
-      margin-bottom: 37px;
       & a{
         line-height: 25px
       }

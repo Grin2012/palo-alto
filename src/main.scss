@@ -2,7 +2,7 @@
 @import "./vendor/normalize";
 
 /* Fonts */
-@import "./fonts";
+@import "./vendor/fonts";
 
 /* variables */
 @import "./_variables";
@@ -15,6 +15,7 @@
 @import "./pages/profile/style";
 
 /* Partials */
+@import "./partials/button/style";
 @import "./partials/includes/header/style";
 @import "./partials/includes/footer/style";
 

@@ -43,9 +43,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    width: 87%;
-  }
   .header-nav{
     word-spacing: 15px;
   }
@@ -57,7 +54,7 @@
   }
   .header-menu{
     background-size: 36px 26px;
-    background-image: url("../images/header-menu.png");
+    background-image: url("./images/header-menu.png");
     width: 36px;
     height: 26px;
     float: right;

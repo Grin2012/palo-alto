@@ -9,7 +9,7 @@ var cssmin = require('gulp-cssmin');
 var browserSync = require('browser-sync').create();
 
 var path = {
-    images: './src/images/**',
+    images: './src/**/images/*',
     fonts: './src/fonts/**',
     css: './src/*.scss',
     html: {
@@ -63,6 +63,7 @@ gulp.task('fonts', function () {
 
 gulp.task('images', function () {
     return gulp.src(path.images)
+        .pipe(rename ({dirname: '.'}))
         .pipe(gulp.dest(path.dist.images));
 });
 
