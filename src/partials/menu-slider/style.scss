@@ -1,0 +1,63 @@
+@import '../../variables.scss';
+
+.menu-slider {
+  display: block;
+  position: fixed;
+  right: -330px;
+  width: 330px;
+  background: #252b4d;
+  font-family: $font-Lato;
+  &__search-form {
+    border-bottom: 1px solid #3b415f;
+    padding: 40px 30px;
+  }
+  &__search-input {
+    width: 270px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__search-submit {
+    width: 16px;
+    height: 16px;
+    background: url(./images/search_light.png);
+    display: inline-block;
+    float: right;
+  }
+  &__nav {
+    padding: 0 30px;
+    &__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+  &__block {
+    margin-top: 50px;
+  }
+  &__link {
+    color: #a9afdb;
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+  }
+  &__footer {
+    padding: 290px 30px 60px;
+    &_logo {
+      width: 98px;
+      height: 21px;
+      background: url("./images/slider_logo.png");
+      display: block;
+    }
+    &_copyright {
+      color: #70748a;
+      font-size: 14px;
+    }
+  }
+}

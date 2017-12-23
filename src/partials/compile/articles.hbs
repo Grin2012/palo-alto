@@ -1,0 +1,28 @@
+{{#articles}}
+<article class="article">
+    {{#if articlePhoto}}
+        <img class="article__photo" srcset="{{articlePhoto.imgSrcSet}}" width="{{articlePhoto.width}}"
+             height="{{articlePhoto.height}}" alt="{{articlePhoto.alt}}">
+    {{/if}}
+    <div class="article_content">
+        <header class="article__header">
+            <div class="article__pagemark">{{pageMark}}</div>
+            <div class="article__date">{{date}}</div>
+            <h2 class="article__heading">{{heading}}</h2>
+        </header>
+        {{#each articleContent}}
+            <div class="article__text_{{text_type}}">
+                <p class="paragraph">{{text}}</p>
+            </div>
+        {{/each}}
+        <footer class="article__footer">
+            <a class="button" href="">Read more</a>
+            <ul class="hash-tags">
+                {{#each hashTags}}
+                    <li class="hash-tags__item"><a class="hash-tags__link" href="">#{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </footer>
+    </div>
+</article>
+{{/articles}}

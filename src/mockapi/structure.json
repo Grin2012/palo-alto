@@ -21,10 +21,13 @@
 
     {
       "articlePhoto": {
-        "imgConfig": [
+        "imgSrcSet": [
           "./images/article_photo.jpg 1x",
           "./images/article_photo@2x.jpg 2x"
-        ]
+        ],
+        "width":952,
+        "height":533,
+        "alt": "Mountains"
       },
       "date": "Sep 18",
       "pageMark": "I do observe",
@@ -44,7 +47,7 @@
         }
       ]
       ,
-      "tags": [
+      "hashTags": [
         "Yosemite",
         "Peak",
         "Photo"
